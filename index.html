@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="./assets/css/index.css">
+  <title>Chromiq</title>
+</head>
+
+<body>
+  <div class="container">
+    <header>
+      <h1 class="title">Chromiq</h1>
+      <div class="form-wrapper">
+        <form id="form">
+          <input type="color" name="color-picker" id="color-picker" class="color-picker">
+          <div class="select-box">
+            <select name="select" id="select" class="select">
+              <option value="monochrome">Monochrome</option>
+              <option value="monochrome-dark">Monochrome-Dark</option>
+              <option value="monochrome-light">Monochrome-Light</option>
+              <option value="analogic">Analogic</option>
+              <option value="complement">Complement</option>
+              <option value="analogic-complement">Analogic-Complement</option>
+              <option value="triad">Triad</option>
+              <option value="quad">Quad</option>
+            </select>
+          </div>
+          <button id="get-scheme-btn" class="get-scheme-btn" type="submit">Get color scheme</button>
+        </form>
+      </div>
+    </header>
+    <main>
+      <section class="color-section" id="color-section">
+
+      </section>
+      <section class="hex-value-section" id="hex-value-section">
+
+      </section>
+    </main>
+  </div>
+
+  <script src="./assets/js/index.js"></script>
+</body>
+
+</html>
